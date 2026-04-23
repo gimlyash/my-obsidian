@@ -16,14 +16,6 @@
 		{"id":"15c2c40f54cba8b1","type":"text","text":"Defillama.py","x":231,"y":2018,"width":149,"height":50,"color":"5"},
 		{"id":"94e5f8e795c3319b","type":"text","text":"Другие","x":231,"y":2113,"width":149,"height":50,"color":"5"},
 		{"id":"823843e0a9f463df","type":"text","text":"sources","x":6,"y":2063,"width":99,"height":50,"color":"5"},
-		{"id":"0196e41a182ec1d7","type":"text","text":"core","x":10,"y":2180,"width":92,"height":50,"color":"5"},
-		{"id":"58f20bec5fc30aa7","type":"text","text":"data_collectors отвечает за сбор данных с источников:\n- service.py - оркестратор пайплайна сбора данных, нормализует результат сбора, обрабатывает ошибки, пишет raw JSON, пишет в PostgreSQL.\n- config.py - конфиг для настройки коллектора\n\ncore - ядро проекта, которое отвечает за загрузку конфигурации из окружения, инициализацию подключения к БД, описание ORM моделей и сохранение данных коллектора.\n\n","x":-154,"y":2620,"width":457,"height":320,"color":"5"},
-		{"id":"a4dfdcb211530d76","type":"text","text":"Модель данных которые приходят","x":-239,"y":2480,"width":184,"height":75,"color":"5"},
-		{"id":"8285008d2d23c076","type":"text","text":"models.py","x":56,"y":2518,"width":133,"height":50,"color":"5"},
-		{"id":"90d91f637f3c33fb","type":"text","text":"db.py","x":380,"y":2205,"width":120,"height":50,"color":"5"},
-		{"id":"11d93beb524fd06a","type":"text","text":"config.py","x":380,"y":2300,"width":120,"height":50,"color":"5"},
-		{"id":"459e89770bc2eebe","type":"text","text":"db_models.py","x":381,"y":2400,"width":149,"height":50,"color":"5"},
-		{"id":"14714a81956cb369","type":"text","text":"config.py","x":303,"y":2480,"width":120,"height":50,"color":"5"},
 		{"id":"fc1f4ca3dc21016a","type":"text","text":"- Объедини всё: веб и бот используют один и тот же ИИ-агент и базу\n- Добавь обработку ошибок, логирование\n- Сделай backtesting моделей\n- Напиши тесты\n- Опиши архитектуру\n- Сделай презентацию и демонстрацию (бот + веб)\n- Напиши текст диплома","x":120,"y":1501,"width":650,"height":225,"color":"4"},
 		{"id":"9cf8263263986781","type":"text","text":"### Интеграция, тестирование и полировка","x":-409,"y":1581,"width":464,"height":66,"color":"4"},
 		{"id":"0b19ef76d238b3e0","type":"text","text":"### Веб-приложение","x":-302,"y":1363,"width":250,"height":60,"color":"4"},
@@ -32,7 +24,9 @@
 		{"id":"4f21ebfc19bca213","type":"text","text":"### Подготовка","x":-271,"y":161,"width":180,"height":60,"color":"4"},
 		{"id":"177cbfe8b8b7070f","type":"text","text":"### Сбор и хранение данных","x":-307,"y":401,"width":253,"height":80,"color":"4"},
 		{"id":"007173347ed35fae","type":"text","text":"### Бэкенд + API","x":-286,"y":641,"width":210,"height":62,"color":"4"},
-		{"id":"252bd61abae76c79","x":-1620,"y":1487,"width":558,"height":916,"type":"text","text":"### 1. ❗ Методология расчётов\n\nВажно объяснить:\n\n- как считается yield (APR vs APY)\n- откуда берётся TVL\n- как считаешь risk score\n\n👉 Без этого проект могут назвать “витриной данных”.\n\n---\n\n### 2. ❗ Формализация risk score\n\nСделай что-то вроде:\n\n- итоговый риск = f(ликвидность, регуляция, oracle, redemption)\n\nДаже простая формула → огромный плюс.\n\n---\n\n### 3. ❗ Источники данных\n\nНужно явно указать:\n\n- API / on-chain данные\n- как агрегируешь\n- как обрабатываешь ошибки\n\n---\n\n### 4. ❗ Ограничения системы\n\nОчень важно для диплома:\n\n- задержки данных\n- неполнота RWA-рынка\n- зависимость от ораклов"}
+		{"id":"252bd61abae76c79","type":"text","text":"### 1. ❗ Методология расчётов\n\nВажно объяснить:\n\n- как считается yield (APR vs APY)\n- откуда берётся TVL\n- как считаешь risk score\n\n👉 Без этого проект могут назвать “витриной данных”.\n\n---\n\n### 2. ❗ Формализация risk score\n\nСделай что-то вроде:\n\n- итоговый риск = f(ликвидность, регуляция, oracle, redemption)\n\nДаже простая формула → огромный плюс.\n\n---\n\n### 3. ❗ Источники данных\n\nНужно явно указать:\n\n- API / on-chain данные\n- как агрегируешь\n- как обрабатываешь ошибки\n\n---\n\n### 4. ❗ Ограничения системы\n\nОчень важно для диплома:\n\n- задержки данных\n- неполнота RWA-рынка\n- зависимость от ораклов","x":-1620,"y":1487,"width":558,"height":916},
+		{"id":"a4dfdcb211530d76","type":"text","text":"Модель данных которые приходят","x":-246,"y":2240,"width":184,"height":75,"color":"5"},
+		{"id":"8285008d2d23c076","type":"text","text":"models.py","x":75,"y":2380,"width":133,"height":50,"color":"5"}
 	],
 	"edges":[
 		{"id":"bdb16f21ebe59852","fromNode":"c20cb23a51fb7748","fromSide":"bottom","toNode":"4f21ebfc19bca213","toSide":"top"},
@@ -57,11 +51,6 @@
 		{"id":"7844b2bfe378de11","fromNode":"a4dfdcb211530d76","fromSide":"right","toNode":"8285008d2d23c076","toSide":"left"},
 		{"id":"40222a2f29fe9b83","fromNode":"1a36a6e390d6f9a4","fromSide":"right","toNode":"56187147bb05cf9e","toSide":"left"},
 		{"id":"1f2a46bfc2a0c16d","fromNode":"56187147bb05cf9e","fromSide":"right","toNode":"823843e0a9f463df","toSide":"left"},
-		{"id":"184c02d671021773","fromNode":"56187147bb05cf9e","fromSide":"right","toNode":"0196e41a182ec1d7","toSide":"left"},
-		{"id":"bc3c295612321b7a","fromNode":"0196e41a182ec1d7","fromSide":"right","toNode":"90d91f637f3c33fb","toSide":"left"},
-		{"id":"5f0412947df3e2b0","fromNode":"1a36a6e390d6f9a4","fromSide":"right","toNode":"5600bc5c1530be40","toSide":"left"},
-		{"id":"aed0f868534dd08f","fromNode":"0196e41a182ec1d7","fromSide":"right","toNode":"11d93beb524fd06a","toSide":"left"},
-		{"id":"595529ab756c72f4","fromNode":"0196e41a182ec1d7","fromSide":"right","toNode":"459e89770bc2eebe","toSide":"left"},
-		{"id":"20b11d9652ff2d8e","fromNode":"0196e41a182ec1d7","fromSide":"right","toNode":"14714a81956cb369","toSide":"left"}
+		{"id":"5f0412947df3e2b0","fromNode":"1a36a6e390d6f9a4","fromSide":"right","toNode":"5600bc5c1530be40","toSide":"left"}
 	]
 }
